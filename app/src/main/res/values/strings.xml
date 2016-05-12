@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">UranaiApp</string>
+
+    <!--TextViewに表示する文字列-->
+    <string name="main_txv_title">占いアプリ</string>
+    <string name="main_txv_name">名前</string>
+    <string name="main_txv_birthday">生年月日</string>
+    <string name="main_txv_year">年</string>
+    <string name="main_txv_month">月</string>
+    <string name="main_txv_day">日</string>
+    <string name="main_txv_gender">性別</string>
+
+    <!--Buttonに表示する文字列-->
+    <string name="main_btn_divine">占う</string>
+    <string name="main_btn_init">取り消し</string>
+    <string name="main_btn_mdr">戻る</string>
+
+    <!--性別データ-->
+    <string name="main_radio_btn_male">男性</string>
+    <string name="main_radio_btn_female">女性</string>
+
+    <!--血液型データ-->
+    <string name="main_abo_abo">血液型</string>
+    <string name="main_abo_a">A型</string>
+    <string name="main_abo_b">B型</string>
+    <string name="main_abo_o">O型</string>
+    <string name="main_abo_ab">AB型</string>
+
+    <!--メール-->
+    <string name="main_mail_mail">メールアドレス</string>
+    <string name="mail_mail_add">address</string>
+
+    <!--生年月日の年号データ-->
+    <string-array name="main_spn_era">
+        <item>明治</item>
+        <item>大正</item>
+        <item>昭和</item>
+        <item>平成</item>
+    </string-array>
+    
+    <!--占い結果データ-->
+   <string-array name="result_txv_divine_data">
+       <item>いいことが起きるでしょう！</item>
+       <item>最悪の1日になるでしょう！</item>
+       <item>微妙な1日になるでしょう！</item>
+       <item>普通の1日になるでしょう！</item>
+       <item>大きな決断をするでしょう！</item>
+       <item>異性に告白されるでしょう！</item>
+       <item>素晴らしい出会いがあるでしょう！</item>
+       <item>空からタライが落ちてくるでしょう！</item>
+       <item>忘れ物をするでしょう！</item>
+       <item>問題を解決できるでしょう！</item>
+       <item>曲がり角に気をつけましょう！</item>
+
+    </string-array>
+
+    <!--占い結果データ２-->
+<string name="data_main">メールアドレスにメールを送信致しました</string>
+    <string name="data_un">今日の運勢</string>
+    <string name="data_add">アドバイス</string>
+
+    <string-array name="result_txv_add">
+        <item>高いところに登ってみるといいでしょう</item>
+        <item>普段会わない友達に会ってみましょう</item>
+        <item>苦手なことにチャレンジしてみましょう</item>
+        <item>美味しいご飯を食べましょう</item>
+        <item>旅立ちの時です</item>
+        <item>人生を振り返ってみましょう</item>
+        <item>人に優しくしてみましょう</item>
+        <item>笑顔を心がけましょう</item>
+        <item>寝ましょう</item>
+        <item>散財しましょう</item>
+        <item>新たな出会いを求めましょう</item>
+
+    </string-array>
+
+    <string-array name="result_txv_abo">
+        <item>B型さんを褒めましょう</item>
+        <item>AB型さんに好きな本を聞いてみましょう</item>
+        <item>A型さんの話をよく聞いてあげましょう</item>
+        <item>O型さんに昨日の晩御飯を聞いてみましょう</item>
+        <item>A型さんに質問をしてみましょう</item>
+        <item>B型さんに何かプレゼントをあげてみましょう</item>
+        <item>O型さんの前で踊ってみましょう</item>
+        <item>AB型さんを眺めてみましょう</item>
+        <item>B型さんにいつもより優しくしましょう</item>
+        <item>B型さんに奢ってあげましょう</item>
+    </string-array>
+    
+</resources><!--タグの終わり-->

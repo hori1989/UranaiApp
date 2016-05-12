@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding"
+    android:gravity="center_horizontal">
+
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/title_textSize"
+        android:allowUndo="false"
+        android:contextClickable="false"
+        android:textColor="#f67ba5"
+        android:layout_marginBottom="@dimen/title_marginBottom"/>
+
+  <!--textAppearrance: 文字のスタイル(傾斜、文字、大きさなど)-->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/main_txv_name"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#f67ba5"/>
+
+  <!--android:inputType="textPersonName": 人の名前-->
+  <!--android:ems="10": 入力文字数-->
+  <!--android:id="@+id/main_etx_name": 識別子(プログラムから呼び出す際に必要)-->
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="textPersonName"
+      android:hint="Name"
+      android:ems="10"
+      android:id="@+id/main_etx_name"/>
+
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_birthday"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#f67ba5" />
+
+    <!--android:entries="@array/main_spn_era": 年号のデータ設定-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_spn_era"
+        android:entries="@array/main_spn_era"/>
+
+  <!--生年月日入力欄-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="2"
+        android:id="@+id/main_etx_year"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_year"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="2"
+        android:id="@+id/main_etx_month"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_month"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="2"
+        android:id="@+id/main_etx_day"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_day"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/main_txv_gender"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_marginBottom="@dimen/title_marginBottom"
+      android:textColor="#f67ba5" />
+  <!--ラジオボタン-->
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/main_rd_grp">
+
+    <!--android:checked="true": 最初チェックを入れるかどうか-->
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_radio_btn_male"
+        android:id="@+id/main_rd_btn_male"
+        android:checked="true"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_radio_btn_female"
+        android:id="@+id/main_rd_btn_female"/>
+  </RadioGroup>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/main_abo_abo"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_marginBottom="@dimen/title_marginBottom"
+      android:textColor="#f67ba5" />
+
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/main_abc_group">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_abo_a"
+        android:id="@+id/main_abc_a"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_abo_b"
+        android:id="@+id/main_abc_b"
+        android:checked="true"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_abo_o"
+        android:id="@+id/main_abo_o"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_abo_ab"
+        android:id="@+id/main_abo_ab" />
+  </RadioGroup>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/main_mail_mail"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#f67ba5" />
+
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="textEmailAddress"
+      android:hint="address"
+      android:ems="30"
+      android:id="@+id/main_mail_add"/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+  <Button
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/main_btn_divine"
+      android:id="@+id/main_btn_divine"
+      android:layout_weight="3"/>
+
+   <Button
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/main_btn_init"
+       android:id="@+id/main_btn_init"
+       android:layout_weight="1"/>
+
+ </LinearLayout>
+
+</LinearLayout>
